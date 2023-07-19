@@ -7,28 +7,33 @@ use Illuminate\Http\Request;
 class IndexController extends Controller
 {
     //
-    public function index() {
+    public function index()
+    {
         return inertia('Index/Index');
     }
 
-    public function show() {
+    public function show()
+    {
         return inertia('Index/Show');
-
     }
 
-    public function bio() {
-        return "Bio";
+    public function bio()
+    {
+        return "Bio/Index";
     }
 
-    public function exhibitions() {
-        return "Exhibitions";
+    public function exhibitions()
+    {
+        return "Exhibitions/Index";
     }
 
-    public function gallery() {
-        return "Gallery";
+    public function gallery()
+    {
+        return "Gallery/Index";
     }
 
-    public function blog() {
-        return "Blog";
+    public function blog()
+    {
+        return "Blog/Index";
     }
 }
